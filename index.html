@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Brett PZ Chart with Highcharts </title>
+<link rel="stylesheet" href="styles/new.css">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+
+</head>
+<body>
+<h1> Japan's falling birth rate and why it matters</h1>
+<h3> by Brett Pizzi</h3>
+<br>
+<p> Japan's falling birth rate is leading to what may be seen as a population 'bubble' on the verge of bursting. According to an article posted by CNN in 2018, the amount of children in Japan has fallen, as it consistenly has for the past 37 years.Of the 126 million inhabits of Japan, only 12.3% are children. Compared to the US, which has 18.9% of its population made up of children, the Shinzo Abe government of Japan is struggling to convince Japanese citizens to have more children.</p>
+  <div id="container"></div>
+
+<script>
+Highcharts.chart('container', {
+    chart: {
+        type: 'line'
+    },
+    title: {
+        text: 'Japan crude birth rate from 1950-2020'
+    },
+    subtitle: {
+        text: 'Source: data.un.org'
+    },
+    xAxis: {
+        categories: ['1950-1955', '1955-1960', '1960-1965', '1965-1970', '1970-1975', '1975-1980','1980-1985','1985-1990','1990-1995','1995-2000','2000-2005','2005-2010','2010-2015','2015-2020']
+    },
+    yAxis: {
+        title: {
+            text: 'Births per 1,000 population'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: false
+        }
+    },
+    series: [{
+        name: 'Japan',
+        data: [23.574,18.24,17.498,17.920,18.915,15.119,12.836,11.07,9.837,9.423,8.895,8.675,8.402,8.079]
+    },]
+});
+</script>
+<p>
+Source:
+</p>
+<a href ="http://data.un.org/Data.aspx?q=japan+population&d=PopDiv&f=variableID%3a53%3bcrID%3a392">UN Data - Crude birth rate (per 1,000 population)- Japan</a>
+
+<p>This stark difference between young and old is frightening for the developed nation due to the nature of the population of Japan. With not enough individuals migrating to the nation, population is expected to drop to 86.74 million from its current 126.26 million, according to a projection by the Japanese Health Ministry. This can be devestating for the nation, as less and less members of the society being fit enough to work, the ever growing need for pensions and helth care services for the elderly could run dry. As economic and population issues continue to face Japan, the nation will need to find a solution in order to avoid economic hardship.
+</p>
+<p>
+Sources:
+</p>
+<a href ="https://www.cnn.com/2018/05/07/health/japan-child-population-record-low-intl/index.html">Number of children in Japan shrinks to new record low-CNN</a>
+<br>
+<a href="https://www.mhlw.go.jp/english/social_security/dl/social_security6-g.pdf">Ministry of Health, Labor,and Welfare-Trends in Japan population</a>
+
+<div id="container2"></div>
+<script>
+Highcharts.chart('container2', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Average annual rate of population change for Japan from 1950-2020'
+    },
+    subtitle: {
+        text: 'Source: data.un.org'
+    },
+    yAxis: {
+        title: {
+            text: 'Population change in percentages'
+        }
+        },
+    xAxis: {
+        categories: ['1950-1955','1955-1960','1960-1965','1965-1970','1970-1975','1975-1980','1980-1985','1985-1990','1990-1995','1995-2000','2000-2005','2005-2010','2010-2015','2015-2020']
+    },
+
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Japan',
+        data: [1.448,1.02,.994,1.275,1.38,.939,.679,.426,.297,.183,.125,.034,-.09,-.233]
+    },
+    ]
+});
+</script>
+<p>
+Source:
+</p>
+<a href="http://data.un.org/Data.aspx?q=japan&d=PopDiv&f=variableID%3a47%3bcrID%3a392">Average annual rate of population change (percentage)-Japan</a>
+</body>
+</html>

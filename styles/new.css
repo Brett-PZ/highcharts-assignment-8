@@ -1,0 +1,42 @@
+{
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-color: #8eff97;
+}
+h1{
+  text-align: center;
+  width:70%;
+  margin: auto;
+
+}
+h3{
+  text-align: center;
+  width:70%;
+  margin: auto;
+
+}
+a{padding: 1em;
+  margin: auto;
+  width:70%;
+}
+p{
+  padding:1em;
+  width:70%;
+  margin: auto;
+}
+#container {
+  padding:1em;
+  width:70%;
+  height: 600px;
+  margin:auto;
+}
+#container2{
+  padding:1em;
+  width:70%;
+  height:600px;
+  margin: auto;
+}
+@media screen and {max-width:600px}{
+}
